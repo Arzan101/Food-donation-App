@@ -1,8 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import "./FirstPage.css"
 
 
-import Order from "./Orders";
 
   function FirstPage(){
     const history = useHistory();
@@ -11,13 +11,15 @@ import Order from "./Orders";
       let path = `Login`; 
       history.push(path);
     }
-    const Home = () =>{ 
-      let path = `Home`; 
+    const Share = () =>{ 
+      let path = `Share`; 
       history.push(path);
     }
     
+    
       return (
-        <div>
+      <div className="Background">
+        <div className= "home__container1">
         
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&url=https%3A%2F%2Fform.jotform.com%2F230912145770048" title="oEmbed Form" />
@@ -66,7 +68,8 @@ import Order from "./Orders";
               </li>
               <li className="form-line form-line-column form-col-4" data-type="control_button" id="id_2">
                 <div id="cid_2" className="form-input-wide" data-layout="full">
-                <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" onClick={Login}>Collect</button></div>
+                <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" onClick={Share}>Collect</button></div>
+                
                 </div>
               </li>
               <li style={{clear: 'both'}} />
@@ -76,6 +79,7 @@ import Order from "./Orders";
          
          
         </form>
+       </div>
       </div>
 
  

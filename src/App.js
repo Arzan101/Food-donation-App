@@ -13,6 +13,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
 import FirstPage from './FirstPage';
+import Collect from './Collect1';
+import Share from './Share';
 
 const promise = loadStripe("pk_test_51KZRkQSHV4CwkIjNz1qcBXbXwvaK1rQEa0o8n9HW8tUb2wQHkOpD6WTdxBCPYn3cOfDRIFrnL0giHZOrnMJfdZfF00S0Uqmqfp");
 
@@ -61,6 +63,16 @@ function App() {
           <Route path="/Home">
             <Header/>
             <Home/>
+          </Route>
+
+          <Route path="/Collect">
+            <Header/>
+            <Collect/>
+          </Route>
+
+          <Route path="/Share">
+          <Header/>
+          <Share/>
           </Route>
 
               <Route path="/Checkout">

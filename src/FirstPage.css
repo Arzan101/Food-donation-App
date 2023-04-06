@@ -1,0 +1,10 @@
+.Background{
+    background-image: url('hands.jpg');
+    object-fit: contain;
+     width: 100%;
+     z-index: -1;  
+     height: fit-content;
+}
+.jot-from{
+    display: flex  !important;
+}
